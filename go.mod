@@ -1,4 +1,4 @@
-module github.com/ettech/otp-mdcommon
+module github.com/ettec/otp-mdcommon
 
 go 1.13
 
