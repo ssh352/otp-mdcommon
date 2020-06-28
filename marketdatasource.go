@@ -48,7 +48,7 @@ func (s *marketDataSourceServer) Connect(stream marketdatasource.MarketDataSourc
 	fromClientId := values[0]
 	subscriberId := fromClientId + ":" + uuid.New().String()
 
-	log.Printf("connect request received for  subscriber %v, unique connection id: %v ", fromClientId, subscriberId)
+	log.Printf("connect request received for subscriber %v, unique connection id: %v ", fromClientId, subscriberId)
 
 	out := make(chan *model.ClobQuote)
 
