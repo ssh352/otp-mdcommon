@@ -69,7 +69,7 @@ func NewMdsQuoteStreamFromFn(id string, targetAddress string, out chan *model.Cl
 		errLog:            log.New(os.Stderr, "target:"+targetAddress+" ", log.Lshortfile|log.Ltime),
 	}
 
-	log.Println("connecting to market data source at " + targetAddress)
+	log.Println("connecting to market   data source at " + targetAddress)
 
 	client, conn, err := getConnection(targetAddress)
 	if err != nil {

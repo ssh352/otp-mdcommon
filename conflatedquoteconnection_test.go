@@ -24,8 +24,6 @@ func (t testMdsQuoteStream) GetStream() <-chan *model.ClobQuote {
 
 func Test_clientConnection_Subscribe(t *testing.T) {
 
-	t.FailNow()
-
 	in := make(chan *model.ClobQuote, 100)
 	out := make(chan *model.ClobQuote, 100)
 
