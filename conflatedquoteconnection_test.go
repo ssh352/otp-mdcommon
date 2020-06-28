@@ -29,7 +29,7 @@ func Test_clientConnection_Subscribe(t *testing.T) {
 	in := make(chan *model.ClobQuote, 100)
 	out := make(chan *model.ClobQuote, 100)
 
-	c := NewConflatedQuoteConnection("testId", &testMdsQuoteStream{
+	c := NewConflatedQuoteConnection("2testId", &testMdsQuoteStream{
 		func(listingId int32) {
 
 		}, in}, out, 100)
